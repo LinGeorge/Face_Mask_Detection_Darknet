@@ -12,7 +12,7 @@ Evaluate: mAP@0.50 = 88.78 %
 
 Classes: mask / no mask / mask improperly
 
-Demo:  [Demo on Youtube](https://youtu.be/H3QA6NHCdqw)
+[Demo on Youtube](https://youtu.be/H3QA6NHCdqw)
 
 ## Dataset
 The dataset for this pretrained network is provided by [VictorLin000](https://github.com/VictorLin000/YOLOv3_mask_detect) and contains 678 images of people with and without masks. There are 3 different classes annotated:
