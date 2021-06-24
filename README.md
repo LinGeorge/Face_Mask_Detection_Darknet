@@ -43,14 +43,26 @@ First, YOLO v3 uses a variant of Darknet with 53 layer networks trained on "Imag
  ```
 
 ## Demo on three cases
+### mask improperly
 <img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_origin/mask_incorrect/detected.jpg" width="60%">
+
+### mask
 <img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_origin/with_mask/detected.jpg" width="60%">
+
+### no mask
 <img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_origin/without_mask/detected.jpg" width="60%">
 
 ## Demo on special cases
+### cloth_mask
 <img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_origin/special_mask/cloth_mask/detected.jpg" width="60%">
+
+### n95_n99
 <img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_origin/special_mask/n95_n99/detected.jpg" width="60%">
+
+### scarf
 <img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_origin/special_mask/scarf/detected.jpg" width="60%">
+
+### transparent
 <img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_origin/special_mask/transparent/detected.jpg" width="60%">
 
 
@@ -119,7 +131,7 @@ I've tried large dataset(FFHQ + MFN) on darknet53, but it seems overfit on the d
 |-------------|-----------|--------|----------|-----|----|----|-------------|
 | **0.25**        |    0.99   |  1.00  |   1.00   | 300 | 2 | 0 |   90.03 %   |
 
-### Test Result
+### Test Result ( the reason why the model overfits on the dataset distribution )
 | class_id | name       | TP  | FP | ap     |
 |----------|------------|-----|----|--------|
 | 0        | mask       |  24 |  5 | 82.76% |
@@ -127,7 +139,7 @@ I've tried large dataset(FFHQ + MFN) on darknet53, but it seems overfit on the d
 | 2        | no mask    |  25 |  7 | 78.13% |
 
 ### Mean Average Precision
-mean average precision (mAP@0.50) = 88.78 %
+mean average precision (mAP@0.50) = 100.00 %
  
 ## Reference
 - https://arxiv.org/abs/1804.02767
