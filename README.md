@@ -67,6 +67,9 @@ First, YOLO v3 uses a variant of Darknet with 53 layer networks trained on "Imag
 
 
 ## Evaluation
+### Learning Curve
+<img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_origin/%E5%8E%9F%E5%A7%8B%E6%95%B8%E6%93%9A%E6%88%AA%E5%9C%96/learning_curve.png" width="60%">
+
 ### Average Precision
 | class_id | name       | TP  | FP | ap     |
 |----------|------------|-----|----|--------|
@@ -112,13 +115,13 @@ for this data
                          /content/Face_Mask_Detection_YOLO/demo/man_0_1.png
 ```
 
-### Addition (with Large Dataset)
+## Addition (with Large Dataset)
 I've tried large dataset(FFHQ + MFN) on darknet53, but it seems overfit on the dataset and output all the bounding boxes with whole image.
 
-
-![image](https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_MFN/%E5%8E%9F%E5%A7%8B%E6%95%B8%E6%93%9A%E6%88%AA%E5%9C%96/learning_curve.png)
-
 ## Evaluation
+### Learning Curve
+<img src="https://github.com/LinGeorge/Face_Mask_Detection_Darknet/blob/master/darknet53_mask_MFN/%E5%8E%9F%E5%A7%8B%E6%95%B8%E6%93%9A%E6%88%AA%E5%9C%96/learning_curve.png" width="60%">
+
 ### Average Precision
 | class_id | name       | TP  | FP | ap     |
 |----------|------------|-----|----|--------|
